@@ -1,0 +1,128 @@
+/*Fuente general utlizada en todo el cuestionario. Las he metido en la carpeta fonts para poder instalarlas*/
+* {
+  font-family: "Quicksand";
+  
+}
+/*Quitar el aspecto por defecto que tienen los links*/
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover{
+  color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /*espaciado entre contenidos*/
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 50px;
+  color: aliceblue;
+}
+
+img {
+  display: flex;
+  margin-left: 10px;
+  margin-right: -9px;
+}
+
+input {
+  display: none;
+}
+label:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+input:checked + label {
+    color: #e49116
+  }
+
+h5 {
+  display: flex;
+  text-align: left;
+  margin-left: 200px;
+  padding-top: 30px;
+}
+
+.divRespuestasPersonalizado{
+  display: flex;
+  justify-content: center;
+  margin-left: 250px;
+  flex-direction: column;
+  text-align: left;
+  border-left: 5px outset #c08d41;
+  padding-left: 20px;
+}
+/*Transición animada de fondo*/
+body {
+	background: linear-gradient(-45deg, #585858, #5f4e34, #a7a7a7, #dd8838);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*Forma del botón*/
+button{
+font-weight: 0;
+font-size: 16px;
+color: #fff;
+background-color: #c08d41;
+padding: 10px 30px;
+border: solid #c08d41 2px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+cursor: pointer;
+}
+
+.divBoton{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;  
+}
+
+/*Animación del botón cuando pones el mouse encima*/
+button:hover{
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #c08d41;;
+color: #ffffff;
+border: solid 2px #d6d6d6;
+}
+
+/*Un pequeño espaciado entre el botón y las preguntas para que no quedase tan junto*/
+.divEspaciado{
+  display: flex;
+  margin-top: 40px;
+}
+
+.divCorrecion{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e7e6e6;
+  padding-bottom: 40px;
+
+  
+}
